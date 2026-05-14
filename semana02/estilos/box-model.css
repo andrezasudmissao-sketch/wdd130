@@ -1,15 +1,34 @@
 .callout {
+    max-width: 400px;    /* Limita a largura máxima da caixa para evitar que fique muito larga em telas grandes */
+    margin: 10px;      /* Adiciona uma margem ao redor da caixa para separá-la de outros elementos */
+    border: 1px solid rgba(0, 0, 0, .1);    /* Adiciona uma borda leve para destacar a caixa */
+    padding: 15px;     /* Aumenta o espaço interno para melhorar a legibilidade do texto */
+    background-color: #247;    /* #247 é um tom de azul escuro */
+    color: #fff;       /* #fff é branco, para garantir contraste com o fundo azul */
 	
 }
 
 .callout img {
-	
+    float: right; /* Faz a imagem flutuar para a direita, permitindo que o texto envolva a imagem */
+    margin: 0 0 10px 15px; /* Adiciona uma margem inferior e esquerda para separar a imagem do texto */
+    border: 1px solid #247; /* Adiciona uma borda da mesma cor do fundo para criar um efeito de destaque */
+    padding: 3px; /* Adiciona um pequeno preenchimento ao redor da imagem para melhorar a aparência */
+    background-color: #fff; /* Define o fundo da imagem como branco para criar contraste com a borda e o fundo da caixa */
+    width: 100px; /* Define a largura da imagem para 100 pixels */
+    height: auto; /* Mantém a proporção da imagem, ajustando a altura automaticamente com base na largura definida */
+	 
 }
 
 blockquote {
-	
+    margin: 1rem 0; /* Adiciona uma margem vertical para separar o bloco de citação de outros elementos */
+
 }
 
 cite {
+    display: block; /* Exibe o elemento como um bloco para que ocupe toda a largura disponível e permita a formatação adequada */
+    border-top: 1px dotted #fff; /* Adiciona uma borda superior pontilhada para separar o nome do autor do texto da citação */
+    padding-top: 3px; /* Adiciona um pequeno preenchimento acima do nome do autor para melhorar a legibilidade */ 
+    text-align: right; /* Alinha o texto do nome do autor à direita para criar um estilo de citação mais tradicional */
+    font-size: smaller; /* Reduz o tamanho da fonte para diferenciar o nome do autor do texto da citação */
 	
 }
