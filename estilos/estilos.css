@@ -3,7 +3,7 @@ body {
     line-height: 1.5;
     color: #222;
     background-color: #fff;
-    margin: 0;
+    margin: 15px; /* o professor colocou 0 */
 }
 nav {
     background-color: darkblue;
@@ -25,7 +25,7 @@ main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
-    padding: 2px;
+    padding: 1px;
     box-shadow: 0 0 30px gray;
 
 }
@@ -37,10 +37,9 @@ main {
 p { 
     padding: 0;
 
-
 }
 aside {
-    width: 20px;
+    width: 200px;  /* Estava 20, por isso estava errando */
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
     padding: 1rem;
