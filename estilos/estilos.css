@@ -1,12 +1,25 @@
+:root {
+    --fonte-principal: Arial, Helvetica, sans-serif;
+    --cor-texto: #222;
+    --cor-fundo: #fff;
+    --cor-primaria: darkblue;
+    --cor-secundaria: steelblue;
+    --cor-cinza: gray;
+    --cor-caixa: #eee;
+    --cor-caixa-texto: #333;
+    --largura-padrao: 200px;
+}
+
+
 body {
-    font-family: Arial, helvetica, sans-serif;
+    font-family: var(--fonte-principal);
     line-height: 1.5;
-    color: #222;
-    background-color: #fff;
-    margin: 15px; /* o professor colocou 0 */
+    color:var(--cor-texto);
+    background-color: var(--cor-fundo);
+    margin: 0; /* o professor colocou 0 */
 }
 nav {
-    background-color: darkblue;
+    background-color: var(--cor-primaria);
     padding: 10px;
 }
 
@@ -18,16 +31,15 @@ nav a {
 
 
 h1 {
-    color: darkblue;
+    color: var(--cor-primaria);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: 1px solid var(--cor-secundaria);
     padding: 1px;
-    box-shadow: 0 0 30px gray;
-
+    box-shadow: 0 0 30px var(--cor-cinza);
 }
 
 main {
@@ -39,18 +51,18 @@ p {
 
 }
 aside {
-    width: 200px;  /* Estava 20, por isso estava errando */
+    width: var(--largura-padrao);  /* Estava 20, por isso estava errando */
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color: var(--cor-caixa);
+    color: var(--cor-caixa-texto);
     text-align: center;
     
 }
 
 aside img {
-    width: 200px;
+    width: var(--largura-padrao);
     height: auto;
 }
 
