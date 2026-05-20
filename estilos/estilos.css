@@ -49,6 +49,7 @@ main img {
     padding: 1px;
     box-shadow: 0 0 30px var(--cor-cinza);
     float: right;
+    
 }
 
 main {
@@ -69,14 +70,15 @@ aside {
 
 
 aside img {
-    width: var(--largura-padrao);
+    width: 150px;
     height: auto;
 }
 
 aside h2 { 
     position: absolute;
-    top: 40px;
+    top: 12px;
     left: 30px; /* o professor colocou 120px pq a imagem dele é reta e não retangular. */
+    right: 30px; /* o professor não colocou, mas no texto que está na minha imagem precisou */
 
 }
 
