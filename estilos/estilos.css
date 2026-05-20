@@ -1,3 +1,11 @@
+/* Resetando css do meu projeto */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --fonte-principal: Arial, Helvetica, sans-serif;
     --cor-texto: #222;
@@ -40,6 +48,7 @@ main img {
     border: 1px solid var(--cor-secundaria);
     padding: 1px;
     box-shadow: 0 0 30px var(--cor-cinza);
+    float: right;
 }
 
 main {
@@ -52,18 +61,23 @@ p {
 }
 aside {
     width: var(--largura-padrao);  /* Estava 20, por isso estava errando */
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
-    padding: 1rem;
-    background-color: var(--cor-caixa);
     color: var(--cor-caixa-texto);
     text-align: center;
+    position: relative;
     
 }
+
 
 aside img {
     width: var(--largura-padrao);
     height: auto;
+}
+
+aside h2 { 
+    position: absolute;
+    top: 40px;
+    left: 30px; /* o professor colocou 120px pq a imagem dele é reta e não retangular. */
+
 }
 
 
@@ -72,3 +86,18 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
+/* seletores de classe */
+
+.caixa {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2); /* 1️⃣ */
+    padding: 1rem;
+    background-color: var(--cor-caixa);
+}
+
+.indetacao {
+    padding: 2rem;
+}
+
+/* Esses acima estavam no "aside" e eu trouxe para cá./*
