@@ -7,9 +7,7 @@
 
 :root {
     --cor-primaria: #055a05;
-    --cor-secundaria: #f4a261;
     --cor-destaque1: #254652;
-    --cor-destaque2: #e9c46a;
     --fonte-titulo:"Times new roman", "Georgia" , serif;
     --fonte-body: Arial , Helvetica, sans-serif;
 
@@ -34,6 +32,19 @@ h1, h2 {
 
 }
 
+
+nav, p, section , article {
+    margin: 16px;
+    padding: 8px;
+
+}
+
+
+.hero {
+    position: relative;
+
+}
+
 h1 {
     position: absolute;
     top: 20px;
@@ -45,21 +56,9 @@ h1 {
     color: #fff;
 }
 
-nav, p, section , article {
-    margin: 16px;
-    padding: 8px;
-
-}
-
-.hero article img{
+.hero article img {
     float: right;
     width: 125px;
-}
-
-
-.hero {
-    position: relative;
-
 }
 
 .hero img {
@@ -70,7 +69,7 @@ nav, p, section , article {
 
 }
 
-.redes-sociais a {
+.socialmedia a {
     text-decoration: none;
 }
 
