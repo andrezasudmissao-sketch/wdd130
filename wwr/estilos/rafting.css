@@ -61,6 +61,7 @@ h1, h2 {
     background-color: #c8cdcb;
     justify-content: center;
     align-items:center;
+   
     
    
 }
@@ -79,7 +80,7 @@ h1, h2 {
     text-align: center;
     margin-top: 40px;
     font-size: 14px;
-   
+
     
 }
 
@@ -119,6 +120,7 @@ nav, p, section , article {
     padding: 40px;
     text-align: center;
     
+    
 }
 
 .container p {
@@ -148,7 +150,7 @@ nav, p, section , article {
    border-radius: 8px;
 }
 
- .historia .container {
+.historia .container {
     grid-template-columns: 1fr;
     text-align: center;
   }
@@ -189,6 +191,7 @@ footer{
     align-items: center; /*alinhamento vertical*/
     justify-content: space-between; /* espaço entre texto icone, empurra o texto para a esquerda e os ícones para direita*/
     padding: 5px /* espaço interno */
+
  
 }
 
