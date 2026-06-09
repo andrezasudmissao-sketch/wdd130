@@ -184,6 +184,7 @@ nav, p, section , article {
     width: 125px;
     border-radius: 6px;
 }
+
 footer{
 
     display: flex; /* coloca texto e ícones na mesma linha*/

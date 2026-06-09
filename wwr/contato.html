@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página | Fale Conosco</title>
-    <meta name="description" content="Página Fale Conosco">
+    <meta name="description" content="Esta página apresentará nossas informações de contato e um formulário para que o usuário possa enviar dúvidas sobre a empresa e nossos serviços.">
     <meta name="author" content="Andreza Gomes França da Silva">
     <link rel="stylesheet" href="estilos/contato.css">
 </head>
@@ -20,23 +20,50 @@
     </ul>
     </nav>
     </header>
-<main>  
-      <div class="hero">
-        <img src="imagens/aventurasrafting.jpg" alt="Grupo de aventureiros descendo um rio em bote de rafting com água branca e vegetação nas margens">
-        <h1>Rafting Aventuras</h1>
-        <article>
-            <img src="imagens/fucionariofeliz.jpg" alt="Funcionário sorrindo em um bote vermelho de rafting enquanto segura um remo, transmitindo entusiasmo na água do rio">
-            <p>Missão: Proporcionar aventuras na natureza que sejam seguras e divertidas. Visão: Queremos ser referência número 1 em diversão, segurança e adrenalina. Lema: Uma aventura inesquecível e eletrizante </p>
-        </article>
-       </div>
-       <section class="history">
-        <h2>History</h2>
-            <div class="container">
-            <p>A Aventuras Rafting nasceu do sonho de levar pessoas a viverem a mesma emoção que seu fundador sentiu ao descer um rio pela primeira vez. Começando com um único bote e muita paixão pela natureza, a empresa cresceu aos poucos, conquistando aventureiros da região com segurança, profissionalismo e experiências inesquecíveis.</p>
-            <img src="imagens/historiarafting.jpg" alt="Um foto do começo de um grande sonho.">
-            <p> Com o tempo, novos equipamentos, instrutores treinados e parcerias fortaleceram a marca, que hoje é referência em turismo de aventura e continua guiando pessoas a descobrir a força da água e a alegria de superar desafios.</p>
-            </div>
-        </section>
+<main>
+    <section class="info-local">
+        <h1>Campanha de rafting em Corredeiras</h1>
+        <p>Av. General Osório s/n</p>
+        <p>João Pessoa PB</p>
+        <p>(83)988679727</p>
+        <p>aventurasrafting2026@gmail.com</p>
+    </section>
+
+    <div class="map-form">
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.0599893805047!2d-34.88732512546405!3d-7.1190468928846435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace7dfd4879c0f%3A0x585ebd1b484f6fce!2sAv.%20Gen.%20Os%C3%B3rio%20-%20Centro%2C%20Jo%C3%A3o%20Pessoa%20-%20PB%2C%2058010-780!5e0!3m2!1spt-BR!2sbr!4v1780914972341!5m2!1spt-BR!2sbr"
+            width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <form>
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Digite aqui">
+
+            <label for="e-mail"> E-mail</label>
+            <input type="e-mail" id="e-mail" name="e-mail" placeholder="Digite aqui">
+
+            <p class="titulo-form">Propósito da Mensagem</p>
+            <input type="radio" id="duvida" name="proposito" value="duvida">
+            <label for="duvida">Dúvida Geral</label><br>
+
+            <input type="radio" id="reserva" name="proposito" value="reserva">
+            <label for="reserva">Pergunta sobre Reserva</label><br>
+
+            <input type="radio" id="sugestao" name="proposito" value="sugestao">
+            <label for="sugestao">Sugestão</label><br>
+
+            <label type="mensangem">Mensagem</label>
+            <textarea id="text" name="mensagem" rows="mensagem" required></textarea>
+
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <label for="newsletter">Por favor, me inscreva na newsletter mensal</label><br>
+            
+            <button type="submit">Entrar em cantato</button>
+        </form>
+  </div>
+</main>
+
         <section class="adventure">
     <h2>Estamos aqui para servi-lo</h2>
 
@@ -55,12 +82,12 @@
             <img src="imagens/funcionarioo3.jpeg" alt="Gerente Carlos Pinto">
             <figcaption>Perfil do Funcionário</figcaption>
         </figure>
-    </div>
-    
-    </main>
+    </div> 
+    </section>  <!-- fecha a caixa branca -->   
     <footer>
+        <nav></nav>
          <p>&copy; 2026 📱 Página Fale conosco 📱  Todos os direitos reservados.</p>
-         <div class="socialmedia">
+         <div class="redes-sociais">
             <a href="https://facebook.com">
                 <img src="imagens/facebook.jpg" alt="Link para a página da Aventuras Rafting no Facebook">
             </a>
@@ -74,3 +101,7 @@
     </footer>
 </body>
 </html>
+
+<!-- O branco e o roxo estavam colados porque o rodapé estava dentro da mesma caixa branca (<section class="adventure">).
+Quando isso acontece, o CSS entende que eles fazem parte do mesmo bloco e não cria espaço entre eles. Precisava
+fechar  a caixa branca antes do rodapé -->
