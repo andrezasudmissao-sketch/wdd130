@@ -85,6 +85,7 @@ h1, h2 {
 
 .map {
     flex: 1;
+    border: 0;
 }
 
 form {
@@ -218,4 +219,4 @@ p {
 -2px = bem junto
 -3px = quase colando
 
-text-align → mover o texto para esquerda, direita ou centro*/
+text-align → mover o texto para esquerda, direita ou centro*/
