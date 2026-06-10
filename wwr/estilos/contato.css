@@ -28,12 +28,15 @@ header {
     background-color: #dd8cfa;
     color: white;
     border: 2px solid #dd8cfa;
+   
 }
 
 header img {
     width: 120px;
     height: auto;
     border-radius: 8px;
+
+   
 }
 
 /* MAIN */
@@ -89,14 +92,18 @@ h1, h2 {
 }
 
 form {
-    flex: 1;
-    max-width: 400px;
-    padding: 20px;
+    display: grid;
+    width: 600px;
+    height: 200px;
+    margin: 0;
+    padding:0;
     background-color: #fff;
-    margin-top: 5px;
-    line-height: 2;
-    font-size: 13px;
+    margin-top: 0 auto;
+    line-height: 1; /*line-height para aproximar as frases*/
+
+   
 }
+
 
 /* SEÇÃO ADVENTURE */
 .adventure {
@@ -131,16 +138,16 @@ form {
 }
 
 /* MENU */
-nav ul {
+nav ul{
     display: flex;
-    justify-content: flex-end;
-    gap: 30px;
+    gap: 0px;  /*Define um espaço de 12px entre os ícones.*/
     list-style: none;
     padding: 10px;
+
 }
 
 nav a {
-    text-align: center;
+
     padding: 10px;
     text-decoration: none;
     color: black;
@@ -159,10 +166,9 @@ footer {
     display: flex;
     font-size: 16px;
     background-color: #dd8cfa;
-    border: 2px solid #a49e9e;
-    text-align: center;
-    align-items: center;
+    border: 2px solid #a49e9e;  
     justify-content: center;
+    align-items: center;
     padding: 5px 20px;
 }
 
@@ -170,21 +176,24 @@ footer {
 .redes-sociais {
     display: flex;
     justify-content: flex-end;
-    gap: 12px;
+    gap: 12px;  /*Define um espaço de 12px entre os ícones.*/
     margin-top: 10px;
     align-items: center;
     background-color: #dd8cfa;
-    padding: 40px;
+    padding: 10px 0 0 5px;
 }
 
 
 .redes-sociais a {
     text-decoration: none;
+    background-color: transparent; /*remove o fundo branco*/
+    border: none; /*remove a borda*/
 }
 
 .redes-sociais img {
     width: 32px;
     height: 32px;
+
 }
 
 
@@ -219,4 +228,6 @@ p {
 -2px = bem junto
 -3px = quase colando
 
-text-align → mover o texto para esquerda, direita ou centro*/
+text-align → mover o texto para esquerda, direita ou centro
+
+flex: 1; Crescer e ocupar todo o espaço disponível*/
