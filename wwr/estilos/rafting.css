@@ -19,6 +19,7 @@ body {
     line-height: 1.5;
     background-color: #fdfdfd;
    
+   
 }
 
 header {
@@ -118,8 +119,11 @@ nav, p, section , article {
     gap:20px ;
     align-items: center;
     background-color: #c8cdcb; /* cor de fundo da seção */
-    padding: 40px;
+    padding: 20px;
     text-align: center;
+    margin: 0 -20px;
+   
+   
     
     
 }
@@ -127,6 +131,8 @@ nav, p, section , article {
 .container p {
    text-align: justify;
    color: #130909; /* texto branco para contraste */
+
+
 }
 
 .history h2 {
@@ -135,6 +141,7 @@ nav, p, section , article {
    margin-bottom: 0px; /*Cria um espaço externo abaixo do elemento.*/
    font-size: 24px; /*Define o tamanho da fonte do texto dentro do elemento.*/
    font-weight: bold; /* Define o peso da fonte, ou seja, o quão “grossa” ela é.*/
+   margin: 0 -20px;
 }
 
 .container p {
@@ -194,6 +201,7 @@ footer{
     align-items: center; /*alinhamento vertical*/
     justify-content: space-between; /* espaço entre texto icone, empurra o texto para a esquerda e os ícones para direita*/
     padding: 5px /* espaço interno */
+   
 
  
 }
@@ -220,5 +228,22 @@ footer{
     width: 32px;
     height: 32px;
 }
+
+/*margin (margem) aceita valores negativos
+ Existe valor menor que 0 no CSS, mas nem todo tipo de propriedade aceita.
+ padding (preenchimento) NÃO aceita negativo
+css
+width, height, border, border-radius, gap, etc. também NÃO aceitam negativo
+
+📌Quando usar margem negativa é útil
+Para ajustar um elemento que precisa sair um pouco da posição normal
+Para compensar um padding ou margem de outro elemento
+Para criar efeitos de sobreposição
+
+⚠️ Quando margem negativa pode causar problemas
+Pode fazer o conteúdo sair da tela
+Pode quebrar o layout em telas menores
+Pode causar barras de rolagem indesejadas*/
+
 
 
