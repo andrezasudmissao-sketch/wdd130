@@ -65,17 +65,23 @@ aside h2{
 /* GRID da INDEX */
 .grid-index {
     display: grid;
-    gap: 1px;
+    grid-template-columns: 1px 1fr;
+    gap: 2px;
     align-items: center;
     justify-content: center;
-    padding: 10px;
-    
 
-   
 }
 
 /*padding = espaço dentro do elemento
 margin = espaço fora do elemento +*/
+
+.main-index{
+    padding-left: 220px;
+    padding-block-end: 5%; /*“Adicione 20% de espaço interno na parte inferior do elemento.”*/
+    padding-right: 9%;
+    max-width: 96.8%; 
+  
+}
 
 .main-index img {
     width: 150px;
@@ -84,13 +90,14 @@ margin = espaço fora do elemento +*/
     padding: 1px;
     box-shadow: 0 0 30px var(--cor-cinza);
     float: right;
+    
 }
 
 /* ASIDE da INDEX */
 .aside-index {
     width: var(--largura-padrao);
     color: var(--cor-caixa-texto);
-    text-align: center;
+    text-align:center;
     position: relative;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -112,6 +119,7 @@ margin = espaço fora do elemento +*/
 h1 {
     color: var(--cor-primaria);
     border-bottom: 5px solid var(--cor-primaria);
+   
 }
 
 /* CAIXAS da INDEX */
