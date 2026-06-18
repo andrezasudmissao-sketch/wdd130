@@ -599,6 +599,52 @@ footer {
 
 }
 
+/* Esse é passeios.css do Html contato.*/
+
+
+/* PRINCIPAL HERO */
+.moments {
+    display: flex;
+    gap: 20px;
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-size: 14px;
+    justify-content: space-around;
+}
+
+.moments img {
+    width: 150px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #a49e9e; 
+}
+
+.sobrepor {
+    background: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    
+
+}
+
+.sobrepor img {
+    display: block;
+    margin: 10px auto;
+    width: 400px;
+    padding: 20px;
+   
+
+}
+
+.sobrepor p {
+
+    background-color: rgba(149, 140, 17, 0.2);
+    color: #120202;
+    padding: 70px;
+    align-items: center;
+   
+}
 
 
 
