@@ -1,0 +1,44 @@
+/* height: auto; Preserva a proporção original da imagem e evita distorções. */
+
+main {
+    max-width: 840px;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p {
+    padding: 0; /*significa zero espaço interno dentro do elemento.*/
+}
+
+aside {
+    width: 20rem; /*20 rem = 20 × 16 px = 320 px*/
+    margin: auto;
+    border: 1px solid rgb(0 0 0 /0.2);
+    padding: 15px;
+    background-color: #eee;
+    color: black;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+}
+
+footer{
+    margin-top: 20px;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+
+
+/*A cor da borda usa o método de cor rgb recomendado para aproveitar um efeito de borda sutil e transparente.
+ O valor RGB consiste em quatro valores: vermelho, verde, azul e alfa. Os três primeiros valores (0, 0, 0)
+representam preto, e o último valor, de .2 (20%), representa o alfa, ou opacidade da cor. Um valor alfa 
+de 0,2 significa que a cor é quase transparente, permitindo que o fundo apareça. Ao usar essa cor de borda,
+ela fica bem clara e quase imperceptível, bem como proporciona uma indicação visual sutil que ajuda a separar
+elementos em uma página web. Além disso,
+pode ajudar a adicionar uma camada de interesse visual ao design sem distrair demais o usuário ou prejudicar o layout geral.*/
