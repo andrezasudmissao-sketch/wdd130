@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f6f6f6;
+
+}
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+
+}
+header {
+    font-size: 1.5rem;
+}
+
+header p{
+    font-size: 20px;
+}
+
+main {
+    margin: 0 auto;
+    width: 600px;
+
+}
+
+
+h1{
+   text-align: center;
+   margin: 15px;
+
+}
+
+picture{
+    display: block;
+   
+}
+img{
+    width: 586px;
+    height: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.4);  /* sombra ao redor */
+    border: 7px solid #fff;
+      
+    /* box-shadow: 0 0 0 3px #000; Cria bordas falsas com sombra. */
+    /* outline: 2px dashed blue; Uma “borda externa”, não afeta o layout.*/
+
+
+}
+
+section {
+    background-color: #b9b9b9;
+    margin: 0 0 40px 0;
+    padding: 30px;
+    line-height: 1rem;
+}
+section p {
+    margin-bottom: 5px;
+}
+section h2 {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #333; /*abaixo do h2 foi colocado uma borda preta, isso faz cada texto dentro do h2 ter borda.*/
+    padding-bottom: 8px;
+}
+
+section ul {
+    margin-left: 20px;
+}
+
+/*main {
+    margin: 0 auto; 
+    Isso deixa o conteúdo centralizado*/
+
+/* border:
+dotted - Define uma borda pontilhada
+dashed - Define uma borda tracejada
+solid - Define uma borda sólida
+double - Define uma borda dupla
+groove - Define uma borda sulcada 3D. O efeito depende do valor da cor da borda (Parece uma borda “entalhada”, como se o elemento estivesse cavado para dentro.)
+ridge - Define uma borda triada com ranhuras 3D. O efeito depende do valor da cor da borda (É o oposto de groove: parece uma borda em relevo, saltando para fora.)
+inset - Define uma borda 3D embutida. O efeito depende do valor da cor da borda (Faz o elemento parecer afundado na página.)
+outset - Define uma borda inicial 3D. O efeito depende do valor da cor da borda (Faz o elemento parecer elevado, como um botão antigo.)
+none - Não define fronteira
+hidden - Define uma borda oculta
+
+border-width — espessura
+border-color — cor
+border-radius — arredondamento
+border-top / right / bottom / left — bordas individuais
+
+pseudo-elementos
+css
+div {
+  position: relative;
+}
+div::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 4px solid transparent;
+  box-shadow: inset 0 0 10px rgba(0,0,0,.4);
+}
+Essas técnicas dão efeitos 3D muito mais bonitos e modernos.
+
+border-image
+Permite usar uma imagem como borda.
+
+css
+div {
+  border: 10px solid transparent;
+  border-image: url(border.png) 30 round;
+}
+
+omo funciona a sombra da borda
+A propriedade box-shadow tem esta estrutura:
+
+Código
+box-shadow: deslocamento-x deslocamento-y blur spread cor;
+Exemplo explicado:
+
+css
+box-shadow: 0 0 10px 0 rgba(0,0,0,0.4);
+0 → não desloca para os lados
+0 → não desloca para cima/baixo
+10px → borrado
+0 → sem expansão
+
+rgba(0,0,0,0.4) → sombra preta com transparência. No último número dentro dos parenteses aumenta ou diminui a borda. 
+
+Efeito de borda “glow” (brilho)
+Se quiser que a borda pareça iluminada:
+
+css
+div {
+  border: 4px solid #fff;
+  box-shadow: 0 0 15px #fff;
+}
+*/
