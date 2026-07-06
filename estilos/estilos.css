@@ -27,6 +27,7 @@ main img {
 p {
     padding: 0; /*significa zero espaço interno dentro do elemento.*/
 }
+
 nav{
     background-color: steelblue;
 
@@ -37,6 +38,10 @@ nav a {
     padding: 10px;
     display: block;
 
+}
+
+h1{
+    color: steelblue;
 }
 
 aside {
@@ -51,11 +56,12 @@ aside {
 
 aside img {
     width: 200px;
+    height: auto;
 }
 
 footer{
     margin-top: 20px;
-    border: 1px solid #000;
+    border-top: 1px solid #000;
     text-align: center;
 }
 
