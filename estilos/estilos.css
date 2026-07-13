@@ -27,10 +27,16 @@ main img {
     padding: 2px;
     box-shadow: 0 0 30px gray;
     border: 1px solid steelblue;
+    float: right; /*a imagem foi para direita*/
+    margin-left: 10px;
+    
+
 }
 
 p {
     padding: 0; /*significa zero espaço interno dentro do elemento.*/
+    text-align: justify; /*Foi eu que coloquei*/
+    
 }
 
 nav{
@@ -51,6 +57,7 @@ h1{
 }
 
 aside {
+   /*aside: elemento pai*/
     width: 20rem; /*20 rem = 20 × 16 px = 320 px*/
     margin: auto;
     border: 1px solid rgb(0 0 0 /0.2);
@@ -58,11 +65,33 @@ aside {
     background-color: #fff;
     color: black;
     text-align: center;
+    position: relative; 
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+aside h2{
+    /*aside h2: um dos elementos filhos*/
+    position: absolute; 
+    top: 47px;
+    left: 83px;
+    font-size: 18px;
+    background: linear-gradient(90deg, rgb(242, 242, 247), rgb(3, 133, 23)); /*Esse foi eu que coloquei*/
+    color: #000;
+    /*color: transparent;*/
+    /*background-position-x: center;
+     background-position-x: center; define a posição horizontal do fundo, ou seja, diz ao navegador onde a imagem de fundo deve ficar no eixo X.*/
+    
+}
+
+
+
+aside {
+  width: 20em;
+  text-align: center;
 }
 
 footer{
@@ -71,7 +100,19 @@ footer{
     text-align: center;
 }
 
+/*seletores de classe*/
 
+.caixa {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+.indentacao {
+    padding: 2rem; /*posso usar a mesma class em vários lugares do meu html*/
+  }
 
 /*A cor da borda usa o método de cor rgb recomendado para aproveitar um efeito de borda sutil e transparente.
  O valor RGB consiste em quatro valores: vermelho, verde, azul e alfa. Os três primeiros valores (0, 0, 0)

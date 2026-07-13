@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: #055a05; /*verde-floresta*/
+    --cor-secudaria:#f4a261; /*bege-médio*/
+    --cor-destaque1:#264653; /*azul escuro acizentsdo*/
+    --cor-destaque2:#e9c49a; /* amarelo claro dourado*/
+    --fonte-titulo:"Times New Roman", Georgia, serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+header, main , footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
