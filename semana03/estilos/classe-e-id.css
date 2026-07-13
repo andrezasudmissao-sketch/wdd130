@@ -50,9 +50,34 @@ code {
 }
 
 #melhor-pratica {
-    background: linear-gradient(135deg, #000 0%, #999 100%);
+    background: linear-gradient(135deg, #000 0%, #999 100%); /*cpr cinza e preto*/
     color: white;
     border-radius: 20px;
     padding: 20px
 }
+
+/*Explicando cada parte
+linear-gradient(...) — diz ao CSS que você quer um degradê linear.
+135deg — é o ângulo do degradê.
+0° seria da esquerda para a direita; 135° cria uma diagonal que vai mais ou menos do canto superior esquerdo para o canto inferior direito.
+#000 0% — a cor inicial (preto) começa exatamente no ponto 0% do degradê.
+#999 100% — a cor final (cinza claro) termina no ponto 100%.
+
+cores:
+verde e amarelo: background: linear-gradient(135deg, #0f0 0%, #ff0 100%);
+roxo e azul: background: linear-gradient(135deg, #8000ff 0%, #0099ff 100%);
+3 cores: background: linear-gradient(135deg, #ff0000, #ffff00, #00ff00);
+rosa e branco: background: linear-gradient(135deg, #ff69b4 0%, #ffffff 100%);
+rosa bebe e branco: background: linear-gradient(135deg, #f8c8dc 0%, #ffffff 100%);
+verde e preto: background: linear-gradient(135deg, #00ff00 0%, #000000 100%);
+verde escuro e preto: background: linear-gradient(135deg, #006400 0%, #000000 100%);
+amarelo e rosa: background: linear-gradient(135deg, #ffeb3b 0%, #ff69b4 100%);
+amarelo pastel e rosa babe:background: linear-gradient(135deg, #fff9a6 0%, #ffc0cb 100%);
+lilas e azul: background: linear-gradient(135deg, #c8a2c8 0%, #4da6ff 100%);
+lilas pastel e azul bebe: 
+
+
+
+
+*/
 

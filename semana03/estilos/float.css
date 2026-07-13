@@ -24,3 +24,14 @@ footer {
 
     /* clear: both; */
 }
+
+/*floart:right (direita) para mover o elemento horizontalmente no fluxo do documento. Por exemplo, este bloco
+ de código neste parágrafo tem float para a direita e contém uma declaração margin abreviada que aplica uma margem em todos os lados do elemento*/
+
+/*A propriedade clear em CSS é usada para controlar como os elementos se posicionam em torno de elementos flutuantes. Ao usar a propriedade float
+ para mover elementos para o lado esquerdo ou direito do seu contêiner, os demais elementos se ajustarão ao redor deles.
+A propriedade clear permite interromper esse comportamento e forçar um elemento a ficar abaixo de quaisquer elementos flutuantes.
+
+clear: right faz com que o elemento fique abaixo de quais
+quer elementos que flutuem à direita, enquanto
+clear: both garante que o elemento fique abaixo de todos os elementos flutuantes em ambos os lados.
