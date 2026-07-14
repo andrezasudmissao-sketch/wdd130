@@ -23,6 +23,18 @@ header{
     color: var(--cor-destaque2);
 }
 
+header img{
+    
+    width: 150px;          /* tamanho da imagem */
+    height: 150px;         /* mantém proporção */
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 50%;    /* deixa a imagem redonda */
+    object-fit: cover;     /* garante que o conteúdo se ajuste bem */
+    
+
+}
+
 body{
     font-family: var(--fonte-body);
     color: var(--cor-destaque1);
