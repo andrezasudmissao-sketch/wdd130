@@ -123,16 +123,16 @@ nav, p ,section,  article {
 }
 
 /* SOCIAL MEDIA */
-.socialmedia a{
+.redes-sociais a{
     text-decoration: none;
 }
 
-.socialmedia img{
+.redes-sociais img{
     width: 50px;
     border-radius: 10px;
 }
 
-.socialmedia{
+.redes-sociais{
     display: flex;
     justify-content:flex-end;
     gap: 12px;
