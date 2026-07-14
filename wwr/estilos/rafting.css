@@ -86,7 +86,7 @@ nav, p ,section,  article {
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.7);
     transform: translateY(-10px);
-    background: transparent;
+  
 }
 
 
@@ -103,14 +103,14 @@ nav, p ,section,  article {
     display: flex;      /* MUDANÇA */
     gap: 20px;          /* MUDANÇA */
     align-items: center; /* MUDANÇA */
-    box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* MUDANÇA */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
 /* 🔧 MUDANÇA: imagem dentro do bloco inferior */
 .hero article img {
     width: 140px;       /* tamanho da imagem */
     border-radius: 10px; /* MUDANÇA */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /* MUDANÇA */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); 
 }
 
 /* 🔧 MUDANÇA: texto dentro do bloco inferior */
