@@ -17,3 +17,162 @@ header, main , footer {
     max-width: 840px;
     margin: 0 auto;
 }
+
+header{
+    background-color: var(--cor-primaria);
+    color: var(--cor-destaque2);
+}
+
+body{
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+}
+
+h1 , h2{
+    font-family: var(--fonte-titulo);
+    color:var(--cor-primaria);
+    text-align: center;
+}
+
+/* 🔧 MUDANÇA: h1 agora fica sobre a imagem hero */
+h1{
+    position: absolute; /* MUDANÇA */
+    top: 20px;          /* MUDANÇA */
+    left: 50%;          /* MUDANÇA */
+    transform: translateX(-50%); /* move o elemento 50% para a esquerda, baseado no próprio tamanho do elemento. Isso é usado junto com:
+left: 50%; */
+    width: 100%;        /* O texto com o fundo pegam a imagem toda*/
+    padding: 16px 32px; /* MUDANÇA */
+    opacity: 0.7;       /* transparência*/
+    background-color: rgba(38, 70, 83, 0.8); /* MUDANÇA */
+    color:#fff;
+   
+}
+
+nav, p ,section,  article {
+    margin: 0;
+    padding: 8px;
+}
+
+/* HERO */
+.hero {
+    position: relative; /* elemento PAI */
+}
+
+.hero img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Imagem dentro do bloco inferior */
+.hero article img{
+    z-index: 1; /*z-index controla a ordem das camadas.*/
+    float: right;
+    width: 125px;
+    border: 1px solid #000;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+    transform: translateY(-10px);
+    background: transparent;
+}
+
+
+/* 🔧 MUDANÇA: agora o bloco fica sobre a imagem hero */
+.hero-bottom{
+    position: absolute;  /*usada novamente para que os elementos fiquem acima da imagem hero*/
+    bottom: 10%;        
+    left: 50%;         
+    transform: translateX(-50%); 
+    width: 85%;         
+    background-color: rgba(233, 196, 154, 0.85); /* MUDANÇA */
+    padding: 20px;      /* MUDANÇA */
+    border-radius: 12px; /* MUDANÇA */
+    display: flex;      /* MUDANÇA */
+    gap: 20px;          /* MUDANÇA */
+    align-items: center; /* MUDANÇA */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* MUDANÇA */
+}
+
+/* 🔧 MUDANÇA: imagem dentro do bloco inferior */
+.hero-bottom img {
+    width: 140px;       /* tamanho da imagem */
+    border-radius: 10px; /* MUDANÇA */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.7); /* MUDANÇA */
+}
+
+/* 🔧 MUDANÇA: texto dentro do bloco inferior */
+.hero-bottom p{
+   
+    text-align:left;    /* MUDANÇA */
+    font-size: 1.1rem;  /* MUDANÇA */
+    color:#000;         /* MUDANÇA */
+    line-height: 1.4;   /* MUDANÇA */
+}
+
+/* SOCIAL MEDIA */
+.socialmedia a{
+    text-decoration: none;
+}
+
+.socialmedia img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+.socialmedia{
+    display: flex;
+    justify-content:flex-end;
+    gap: 12px;
+    padding: 40px;
+    margin-top: 16px;
+    place-items: center;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+/* FOOTER */
+footer{
+    display: flex;
+    font-size: 16px;
+    background-color: #c8cdcb;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+/*Estilize o elemento div com a classe hero usando um valor
+ relativo (relative) para que seus elementos filhos, h1 e article, 
+ possam ser posicionados acima do valor absoluto (absolute) dentro de div.
+ 
+ opacity: 0.7; deixa o elemento 70% visível e 30% transparente.
+
+Em outras palavras:
+opacity: 1 → totalmente opaco (100% visível)
+opacity: 0 → totalmente invisível
+opacity: 0.7 → levemente transparente
+
+ z-index: 1 é uma propriedade que controla quem fica por cima de quem quando elementos se sobrepõem.
+
+Ele funciona somente quando o elemento tem algum tipo de posicionamento:
+position: absolute
+position: relative
+position: fixed
+position: sticky
+
+O que o z-index: 1 faz?
+Ele diz:
+
+“Este elemento deve ficar acima dos elementos com z-index: 0 ou sem z-index.”
+
+É como se fosse uma pilha de folhas:
+
+z-index: 0 → fica embaixo
+
+z-index: 1 → fica por cima
+
+z-index: 10 → fica ainda mais por cima
+
+z-index: 999 → topo absoluto
+*/
