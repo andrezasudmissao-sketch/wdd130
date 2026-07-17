@@ -14,6 +14,15 @@ h1 {
   font-size: 1.5rem;
   text-shadow: 3px 3px 5px #777;
 }
+
+/*text-shadow: 3px 3px 5px #777;
+significa:
+
+3px → deslocamento horizontal da sombra (para a direita)
+3px → deslocamento vertical da sombra (para baixo)
+5px → raio de desfoque (quanto mais alto, mais borrada a sombra)
+#777 → cor da sombra (um cinza médio)
+Em resumo: o texto ganha uma sombra cinza, levemente deslocada para a direita e para baixo, com um desfoque suave.*/
       
 .div-principal {
   margin: 10px auto;
@@ -27,6 +36,9 @@ h1 {
   height: 300px;
   object-fit: cover;
 }
+
+/*object-fit: cover; faz com que uma imagem ou vídeo preencha completamente o espaço do elemento, cortando o excesso quando necessário, 
+sem distorcer.*/
       
 .estatisticas {
   position: absolute;
