@@ -76,7 +76,7 @@ h1 , h2{
 }
 
 /* 🔧 MUDANÇA: h1 agora fica sobre a imagem hero */
-h1{
+.hero h1{
     position: absolute; /* MUDANÇA */
     top: 20px;          /* MUDANÇA */
     left: 50%;          /* MUDANÇA */
@@ -106,13 +106,13 @@ nav, p ,section,  article {
     height: auto;
 }
 
+
 /* Imagem dentro do bloco inferior */
 .hero article img{
+    width: 125px;
+    margin: 20px;
     z-index: 1; /*z-index controla a ordem das camadas.*/
     float: right;
-    width: 125px;
-    border: 1px solid var(--cor-destaque4);
-    margin: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.7);
     transform: translateY(-10px);
   
@@ -193,8 +193,7 @@ nav, p ,section,  article {
 .gallery img{
     width: 120px;
     height: 100px;
-    border: 2px solid ;
-    border-image: linear-gradient(90deg, steelblue, rgb(134, 133, 134)) 1;
+    border: 2px solid var(--cor-destaque2) ;
     box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* sombra suave nas bordas da imagem*/
     margin: 12px; /*evita que as imagens fiquem juntas*/
 }
