@@ -22,7 +22,7 @@ main{
 }
 
 main img {
-    width: 150px;
+    width: 160px;
     height: auto;
     padding: 2px;
     box-shadow: 0 0 30px gray;
@@ -40,21 +40,62 @@ p {
 }
 
 nav{
+    display: flex;
     background-color: steelblue;
-    padding: 10px;
+    padding: 20px;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
 nav a {
+    text-decoration: none;
+    font-size: 1.2rem;
     color: #fff;
     padding: 10px;
     display: block;
+    font-weight: 700; /*deixa o texto em negrito.*/
 
 }
 
 h1{
     color: steelblue;
+    border-bottom: 1px solid steelblue ;
+    text-align: left;
 }
+
+header, footer, .grid {
+    max-width: 840px; /* o CSS das regras combinadas de header e footer para definir uma largura máxima de 840 pixels*/
+    margin: 0 auto; /*O auto centraliza a página*/
+   
+
+}
+
+/*.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center; 
+} */
+
+/* ORGANIZAÇÃO DO LAYOUT*/
+.grid {
+  display: grid;
+  align-items: center;
+}
+    
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
+
+    
+aside {
+  width: 20rem;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+/*ORGANIZAÇÃO DO LAYOUT*/
 
 aside {
    /*aside: elemento pai*/
@@ -97,7 +138,12 @@ aside {
 footer{
     margin-top: 20px;
     border-top: 1px solid #000;
+    
+}
+
+footer p{
     text-align: center;
+
 }
 
 /*seletores de classe*/
@@ -105,9 +151,11 @@ footer{
 .caixa {
   margin: 1rem;
   border: 1px solid rgb(0 0 0 / 10%);
-  padding: 1rem;
+  padding: 2rem;
   background-color: #ddd;
   color: #000;
+  margin-left: 9px;
+  margin-right: 9px;
 }
 
 .indentacao {
@@ -120,4 +168,6 @@ representam preto, e o último valor, de .2 (20%), representa o alfa, ou opacida
 de 0,2 significa que a cor é quase transparente, permitindo que o fundo apareça. Ao usar essa cor de borda,
 ela fica bem clara e quase imperceptível, bem como proporciona uma indicação visual sutil que ajuda a separar
 elementos em uma página web. Além disso,
-pode ajudar a adicionar uma camada de interesse visual ao design sem distrair demais o usuário ou prejudicar o layout geral.*/
+pode ajudar a adicionar uma camada de interesse visual ao design sem distrair demais o usuário ou prejudicar o layout geral.
+
+*/
