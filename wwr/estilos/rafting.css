@@ -111,7 +111,6 @@ nav, p ,section,  article {
 /* Imagem dentro do bloco inferior */
 .hero article img{
     width: 125px;
-    margin: 20px;
     z-index: 1; /*z-index controla a ordem das camadas.*/
     float: right;
     box-shadow: 0 4px 8px rgba(0,0,0,0.7);
