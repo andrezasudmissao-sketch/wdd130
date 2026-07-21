@@ -9,6 +9,8 @@
     --cor-secudaria:#f4a261; /*bege-médio*/
     --cor-destaque1:#264653; /*azul escuro acizentsdo*/
     --cor-destaque2:#e9c49a; /* amarelo claro dourado*/
+    --cor-destaque3:#fff; /*branco*/
+    --cor-destaque4:#000; /*preta*/
     --fonte-titulo:"Times New Roman", Georgia, serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
@@ -19,8 +21,13 @@ header, main , footer {
 }
 
 header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: space-between;
+
     background-color: var(--cor-primaria);
     color: var(--cor-destaque2);
+    padding: 20px;
 }
 
 header img{
@@ -33,6 +40,28 @@ header img{
     object-fit: cover;     /* garante que o conteúdo se ajuste bem */
     
 
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px; /*descer o texto*/
+    gap: 10px;
+   
+    list-style: none; /*Remove as bolinhas padrão da lista <ul>.*/
+  
+
+}
+
+li a {
+    background-color: var(--cor-destaque3);
+    text-decoration: none; /*remove o sublinhado*/
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px;
+    margin: -6px;
+    font-size: 16px;
+    
 }
 
 body{
@@ -57,7 +86,7 @@ left: 50%; */
     padding: 16px 32px; /* MUDANÇA */
     opacity: 0.7;       /* transparência*/
     background-color:var(--cor-primaria); /* MUDANÇA */
-    color:#fff;
+    color:var(--cor-destaque3);
    
 }
 
@@ -82,7 +111,7 @@ nav, p ,section,  article {
     z-index: 1; /*z-index controla a ordem das camadas.*/
     float: right;
     width: 125px;
-    border: 1px solid #000;
+    border: 1px solid var(--cor-destaque4);
     margin: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.7);
     transform: translateY(-10px);
@@ -122,6 +151,61 @@ nav, p ,section,  article {
     line-height: 1.4;   /* MUDANÇA */
 }
 
+
+.container{
+  
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr auto 1fr; /*um texto do lado esquerdo(1fr), a imagem no meio(auto) e o outro texto no lado direito.(1fr)*/
+    margin-bottom: 10px;
+    text-align: justify; /*justificar texto*/
+    padding: 10px;
+      
+   
+}
+
+.container img{
+    width: 100px;
+    border-radius: 5px;
+
+}
+
+.history {
+    border: 1px solid var(--cor-destaque4);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.adventure{
+   border: 1px solid var(--cor-destaque4);
+   margin-bottom: 10px;
+
+}
+
+.gallery { 
+    display: flex;
+    padding: 20px;
+    gap: 18px; /* separa as imagens coladas*/
+       
+    
+}
+
+.gallery img{
+    width: 120px;
+    height: 100px;
+    border: 2px solid ;
+    border-image: linear-gradient(90deg, steelblue, rgb(134, 133, 134)) 1;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* sombra suave nas bordas da imagem*/
+    margin: 12px; /*evita que as imagens fiquem juntas*/
+}
+
+.gallery figcaption {
+
+    font-size: 10px;
+    text-align: center;
+
+}
+
 /* SOCIAL MEDIA */
 .redes-sociais a{
     text-decoration: none;
@@ -152,6 +236,7 @@ footer{
     align-items: center;
     justify-content: space-between;
     padding: 5px;
+    border: 1px solid var(--cor-destaque4);
 }
 
 /*Estilize o elemento div com a classe hero usando um valor
