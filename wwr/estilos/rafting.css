@@ -21,6 +21,7 @@ header, main , footer {
 }
 
 header{
+
     display: grid;
     grid-template-columns: auto 1fr;
     justify-content: space-between;
@@ -47,7 +48,7 @@ nav ul{
     justify-content: center;
     margin-top: 60px; /*descer o texto*/
     gap: 10px;
-   
+
     list-style: none; /*Remove as bolinhas padrão da lista <ul>.*/
   
 
@@ -147,7 +148,7 @@ nav, p ,section,  article {
    
     text-align:left;    /* MUDANÇA */
     font-size: 1.1rem;  /* MUDANÇA */
-    color:#000;         /* MUDANÇA */
+    color:var(--cor-destaque4);         /* MUDANÇA */
     line-height: 1.4;   /* MUDANÇA */
 }
 
