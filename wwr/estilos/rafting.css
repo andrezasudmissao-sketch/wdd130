@@ -9,8 +9,8 @@
     --cor-secudaria:#f4a261; /*bege-médio*/
     --cor-destaque1:#264653; /*azul escuro acizentsdo*/
     --cor-destaque2:#e9c49a; /* amarelo claro dourado*/
-    --cor-destaque3:#fff; /*branco*/
-    --cor-destaque4:#000; /*preta*/
+    --cor-destaque3:#ffffff; /*branco*/
+    --cor-destaque4:#000000; /*preta*/
     --fonte-titulo:"Times New Roman", Georgia, serif;
     --fonte-body: Arial, Helvetica, sans-serif;
 }
@@ -57,8 +57,8 @@ nav ul{
 li a {
     background-color: var(--cor-destaque3);
     text-decoration: none; /*remove o sublinhado*/
-    color: #000;
-    border: 2px solid #000;
+    color: var(--cor-destaque4);
+    border: 2px solid var(--cor-destaque4);
     padding: 10px;
     margin: -6px;
     font-size: 16px;
