@@ -169,17 +169,16 @@ nav, p ,section,  article {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-.adventure{
-   border: 1px solid var(--cor-destaque4);
-   margin-bottom: 10px;
-
-}
-
+                                                                                         
+/* GALERIA */
 .gallery { 
     display: flex;
     padding: 20px;
-    gap: 18px; /* separa as imagens coladas*/
+    gap: 15px;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+    justify-content: space-around;
        
     
 }
@@ -198,6 +197,9 @@ nav, p ,section,  article {
     text-align: center;
 
 }
+
+
+
 
 /* SOCIAL MEDIA */
 .redes-sociais a{
@@ -271,26 +273,7 @@ z-index: 999 → topo absoluto
 /* Esse é passeios.css do Html contato.*/
 
 
-/* RESET GLOBAL */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-/* BODY */
-body {
-    font-family: var(--fonte-body);
-    color: var(--cor-destaque1);
-    line-height: 1.5;
-    background-color: #fdfdfd;
-}
-
-/* LARGURA PADRÃO DO SITE */
-header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-}
 
 
 
@@ -371,16 +354,7 @@ input {
 
 }
 
-/* GALERIA */
-.gallery {
-    display: flex;
-    gap: 15px;
-    background-color: #fff;
-    padding: 2px;
-    text-align: center;
-    font-size: 14px;
-    justify-content: space-around;
-}
+
 
 
 
