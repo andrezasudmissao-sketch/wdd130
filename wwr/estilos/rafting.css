@@ -227,7 +227,7 @@ footer{
     background-color: var(--cor-secudaria);
     text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 5px;
     border: 1px solid var(--cor-destaque4);
 }
@@ -266,3 +266,126 @@ z-index: 10 → fica ainda mais por cima
 
 z-index: 999 → topo absoluto
 */
+
+
+/* Esse é passeios.css do Html contato.*/
+
+
+/* RESET GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: var(--fonte-body);
+    color: var(--cor-destaque1);
+    line-height: 1.5;
+    background-color: #fdfdfd;
+}
+
+/* LARGURA PADRÃO DO SITE */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* INFO LOCAL */
+.info-local {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.info-local h1 {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.info-local p {
+    margin: 2px 0;
+}
+
+/* ENDEREÇO */
+.address p {
+    line-height: 0;
+    text-align: center;
+}
+
+/* MAPA + FORMULÁRIO */
+.map-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.map {
+    flex: 1;
+    border: 0;
+}
+
+form {
+
+    display: grid;
+    width: 600px;
+    height: 200px;
+    line-height: 1; /*line-height para aproximar as frases*/
+    margin: 0;
+    background-color: #fff;
+    padding: 10px;
+  
+
+   
+}
+
+input {
+    
+    padding: 6px;
+}
+
+
+.titulo-form{
+    font-weight: 10px;
+}
+
+
+
+/* SEÇÃO ADVENTURE */
+.adventure {
+    max-width: 840px;
+    margin: 10px auto 10px;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+.adventure h2 {
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+/* GALERIA */
+.gallery {
+    display: flex;
+    gap: 15px;
+    background-color: #fff;
+    padding: 2px;
+    text-align: center;
+    font-size: 14px;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
