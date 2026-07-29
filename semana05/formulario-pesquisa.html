@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+     <link rel="stylesheet" href="estilos/formulario-pesquisa.css">
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Formulário HTML - Enquete do Usuário</h1>
+    </header>
+    <main>
+        
+        <form>
+        <div class="contatos">
+        <h2>Informações de Contato</h2>
+        <div class="item-formulario coluna2">
+            <label for="nomecompleto">Nome Completo</label>  <!--Labels – Rótulos que descrevem a finalidade de cada campo do formulário-->
+            <input type="text" id="nomecompleto" required> <!--O input dentro de um <form> serve para coletar dados do usuário--> </div>
+
+             <div class="item-formulario coluna2"> 
+            <label for="email-do-usuario">Email:</label>
+            <input type="email" id="email-do-usuario" name="email-do-usuario" required></div> 
+            </div>
+            
+        <div class="perguntas">
+        <h2>Perguntas</h2>
+             <div class="item-formulario coluna1">
+            <label for="navegador">Qual seu navegador favorito:</label>
+                <select name="navegador" id="navegador">  <!--O <select> dentro de um <form> serve para criar uma lista de opções para o usuário escolher.-->
+                    <option value="1">Chrome</option>
+                    <option value="2">Safari</option>
+                    <option value="3">Edge</option> <!--O <option> é o elemento que define cada escolha dentro de um <select>.-->
+                    <option value="4">Mozilla Firefox</option>
+                    <option value="5">Brave</option>
+                    <option value="6">Etc</option>
+                </select>
+             </div>
+
+             <div class="item-formulario coluna1">
+            <label for="pet">Você tem um bichinho de estimação?</label>
+            <input type="checkbox" id="pet" name="pet"> <!--O checkbox é um tipo de campo de seleção dentro de um formulário.
+             Ele permite que o usuário marque ou desmarque opções — e, diferente do radio, o checkbox aceita múltiplas escolhas.-->
+            </div>
+
+             <div class="item-formulario">
+            <label for="fredback">Liste os lugares onde você morou:</label>
+            <textarea id="fredback" name="fredback" rows="4" placeholder="Teresina-PI, Imperatriz-MA, Sobral-CE e São Luis-MA."></textarea></div>
+            <!--O placeholder é um texto que aparece dentro de um campo de formulário (como input ou textarea)
+             antes do usuário digitar algo. Ele funciona como uma dica visual sobre o que deve ser preenchido.-->
+            <!--O <textarea> é um campo de formulário usado para digitar textos longos, diferente do input type="text", que é mais adequado para textos curtos.-->
+           
+            <button type="submit">Enviar Pesquisa</button> <!-- enviar os dados preenchidos pelo usuário-->
+
+         </div>
+        </form>
+    </main>
+    <footer>&copy 2026 |  Formulário HTML - Enquete do Usuário | Andreza Gomes </footer>
+    
+</body>
+</html>
+
+
+
+
+
+<!--Estrutura Básica de Formulário
+Todo formulário HTML começa com uma tag <form> e termina com uma tag </form>. Todos os elementos dele devem ser colocados entre essas tags. A tag <form> indica ao navegador que todo o conteúdo dela faz parte do mesmo formulário.
+
+Abaixo estão as partes mais importantes de um formulário:
+
+• Contêiner de formulário – O elemento <form> que contém todas as partes do formulário.
+• Campos de formulário – Usados para os usuários digitarem ou selecionarem informações.
+• Labels – Rótulos que descrevem a finalidade de cada campo do formulário.
+• Botão Enviar (Submit) – O botão em que os usuários clicam para enviar suas informações.-->
+
+<!--Atributos de Entrada
+Os elementos de entrada usam atributos para controlar seu comportamento e interação com a entrada de dados. Entender esses atributos ajuda você a criar formulários que funcionam corretamente e proporcionam uma boa experiência aos usuários.
+
+Atributos de entrada importantes:
+
+• type – Define o tipo de entrada (texto, e-mail, senha, etc.)
+• name – Um identificador único para cada elemento do formulário
+• id – Outro identificador usado para conectar labels a entradas
+• required – Define o preenchimento de um campo como obrigatório
+• placeholder – Exibe um texto de exemplo dentro de um campo de entrada.
+• value – Define um valor padrão para o campo de entrada-->
+
+
+<!--Elementos Comuns dos Campos de Formulário
+O HTML oferece diversos tipos de elementos dos campos de formulário para coletar diferentes tipos de informações dos usuários. Cada elemento tem uma função específica e aparece de forma diferente na página da web.
+
+Abaixo estão os elementos de formulário mais utilizados:
+
+• Text input – Para linhas únicas de texto, como nomes ou endereços de e-mail.
+• Password input – Para informações secretas que devem ser ocultadas, como senhas
+• Textarea – Para textos mais longos, como comentários ou mensagens.
+• Checkbox – Caixa de seleção para opções sim/não ou múltipla escolha.
+• Radio buttons – Botões para escolher uma opção dentre várias opções.
+• Select dropdown – Menu suspenso para escolher algo de uma lista.-->

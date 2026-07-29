@@ -1,3 +1,6 @@
+
+
+
 table {
     border-collapse: collapse;
     border: 2px solid rgb(140 140 140);
@@ -17,3 +20,10 @@ thead th, tfoot tr {
     color: #fff;
     font-weight: 700;
 }
+
+/*<body> é o contêiner geral de todo o conteúdo visível da página.
+
+<main> representa o conteúdo principal da página.
+
+👉 Se a tabela faz parte do conteúdo principal, ela deve ficar dentro do <main>.
+👉 Se a tabela é algo secundário, como um widget, um rodapé, um bloco lateral, ela pode ficar fora do <main>, mas ainda dentro do <body>.*/

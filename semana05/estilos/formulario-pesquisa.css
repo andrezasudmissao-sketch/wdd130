@@ -1,0 +1,132 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+header h1 {
+    font-size: 22px;
+    color:rgb(3, 22, 119);
+    text-align: center;
+}
+
+header {
+    width: 650;
+    margin: 0 auto;
+}
+
+/*CENTRALIZA TUDO DENTRO DELES E COLOCA COR ATRÁS*/
+header, main {
+    width: 690px;
+    margin: 0 auto;
+    background-color: rgb(250, 243, 233);
+    padding: 6px;
+}
+
+form {
+    display: grid;
+    width: 650px;
+    margin: 0 auto;
+    border: 1px solid (0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: rgb(244, 245, 246);
+    padding: 3rem;
+}
+
+fieldset{ 
+    display: grid;
+    grid-gap: 5rem; /*80px*/
+    padding: 1rem; /*1rem = 16px*/
+    border: 1px solid (0 0 0 /0.2);
+    margin: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+
+ }
+
+ label, input, button, select , textarea{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+ }
+
+ label {
+    text-align: left; /*Coloca tudo que tem label para o lado esquerdo*/
+    padding-right: 10px;
+    margin: 10px;
+ }
+
+ input[type="checkbox"] { /*A melhor prática para seletor CSS neste caso é input[type="checkbox"]*/
+  width: 22px;
+  height: 22px;
+  vertical-align: bottom;
+}
+
+button {
+  margin: 1rem;
+  background-color: navy;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  background-color: darkgreen; /*O botão muda de cor quando o mousse passa em cima. */
+}
+
+footer {
+ 
+  width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.8em;
+  color: #777;
+  border-top: 1px solid #ccc;
+}
+
+.item-formulario {
+  display: grid;
+  align-items: center;
+}
+
+.coluna1 {
+  grid-template-columns: 3fr 1fr;
+  margin: 0.5rem 0;
+}
+
+.column2 {
+  grid-template-columns: 1fr 2fr;
+}
+
+.contatos.perguntas {
+
+    border: 1px solid #000;
+}
+
+
+
+/*Quando não é 80px?
+Se você fizer algo como:
+
+css
+html {
+  font-size: 10px;
+}
+Aí:
+1rem = 10px
+5rem = 50px
+
+Ou seja: rem sempre depende do tamanho de fonte do elemento html.
+Se quiser, posso te ajudar a calcular qualquer valor em rem ou px.*/
