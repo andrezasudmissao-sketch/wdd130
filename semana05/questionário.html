@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário de HTML e CSS</title>
+    <link rel="stylesheet" href="estilos/questionario.css">
+</head>
+<body>
+    <header>
+    <h1>Questionário de HTML e CSS</h1> 
+   </header>
+    <main>
+        <form>
+            <label for="q1">1. O que significa a sigla CSS?</label>
+            <input type="text" id="q1" name="q1" required>
+
+            <label for="q2">2. Como os atributos "id" e "class" são usados no CSS?</label>
+            <textarea id="q2" name="q2" rows="4" required></textarea>
+
+            <label for="q3">3. Qual opção abaixo é um comentário CSS válido?</label>
+            <select id="q3" name="q3" required>
+                <option value="" selected disabled>Escolha uma...</option>
+                <option value="a">Opção 1</option>
+                <option value="link">Opção 2</option>
+                <option value="href">Opção 3</option>
+            </select>
+
+            <label for="q4">4. Qual é a margem inferior dada por essa declaração?</label>
+            <input selected disabled value="margin: 10px 5px 15px" type="text">
+            <input type="number" id="q4" name="q4" required>
+            
+            <button type="submit">Enviar Questionário</button>
+        </form>
+    </main>
+</body>
+</html>
+
+
+
+ <!--Em questionario.html, crie um formulário HTML válido que seja um questionário online sobre HTML e CSS com pelo menos 4 (quatro) perguntas sobre HTML e/ou CSS.
+Seu documento HTML deve ser válido e conter um título <h1> apropriado para o conteúdo.
+
+Cada elemento de formulário (por exemplo, <input>, <textarea>, <select>, etc.) deve ser acoplado a um elemento label associado.
+Lembre-se de que há duas maneiras de associar rótulos (labels) a elementos de formulário. 
+
+As duas são apropriadas, mas use o mesmo método para manter a consistência.
+
+Os seguintes elementos de entrada e configurações são necessários no questionário:
+1. Uma entrada do tipo text. (pergunta de preencher a lacuna)
+Atribua os valores dos atributos name e id como "q1".
+2. Um elemento textarea. (pergunta de resposta curta)
+Atribua os valores dos atributos name e id como "q2".
+3. Um elemento select. (caixa suspensa ou combobox)
+Atribua os valores dos atributos name e id como "q3".
+O elemento selecionado deve ter pelo menos 3 (três) options (opções) com values (valores).
+Se você quiser que a primeira opção seja rotulada e não selecionável, pode adicionar um elemento option com um atributo value vazio e os atributos selected e disabled, assim:
+<option value="" selected disabled>Escolha uma...</option>
+4. Um elemento de entrada do tipo number. (resposta de número inteiro)
+Atribua os valores dos atributos name e id como "q4".
+O formulário requer um botão, button, do tipo type submit com o texto "Enviar Questionário".-->

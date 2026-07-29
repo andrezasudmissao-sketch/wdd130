@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    flex-direction: column;
+    width: 600px;
+    margin: 0 auto;
+}
+
+header h1 {
+    text-align:center;
+    font-size: 20px; /* diminuir o tamanho da fonte*/
+    margin: 20px; /* adicionar margem para separar o título do formulário */
+    font-style: normal; /* remover o itálico do título */
+
+}
+    
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(219, 216, 224, 0.477);
+    padding: 5px 20px 20px 20px;
+    border-radius: 5px;
+    border: 2px solid rgba(19, 3, 21, 0.141);
+    
+
+}
+
+form{
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    margin-top: 15px;
+}
+
+input, textarea, select, button{
+    padding: 5px 10px;
+}
+
+input[disabled] {
+    background-color:black;
+    color: #fff;
+    width: 250px;
+    height: 30px;
+    text-align:center;
+    margin: 0 auto;
+    
+    
+}
+
+button{
+    background-color: rgb(10, 10, 131);
+    color: white;
+}
+
+
+
+
+/*rgb(10, 10, 131) representa uma cor composta por:
+10 de vermelho (R)
+10 de verde (G)
+131 de azul (B)*/
+
+/* border-radius: 5px; significa que os cantos de um elemento vão ficar arredondados com um raio de 5 pixels.
+border-top: 2px solid black;     → borda superior de 2px, linha sólida, cor preta
+border-bottom: 2px solid black;  → borda inferior de 2px, linha sólida, cor preta
+border-left: 2px solid black;    → borda esquerda de 2px, linha sólida, cor preta
+border-right: 2px solid black;   → borda direita de 2px, linha sólida, cor preta
+Letra “deitada” (itálico)
+Use font-style: italic;
+Ou, se quiser controlar o nível de “grossura”:
+css
+p {
+  font-weight: 300;
+}
+p {
+  font-weight: 700;  
+}
+Valores comuns:
+100 → bem fino
+400 → normal
+700 → negrito
+900 → super grosso
+
+Isso coloca margem automática nos lados, empurrando o elemento para o centro.
+👉 Só funciona se você tiver definido uma largura:
+
+css
+.retangulo {
+  width: 200px;
+  height: 100px;
+  background: rgb(10, 10, 131);
+  margin: 0 auto;
+}*/
