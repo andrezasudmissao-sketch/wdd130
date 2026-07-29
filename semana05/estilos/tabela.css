@@ -1,0 +1,32 @@
+
+
+table {
+    border-collapse: collapse; /* as bordas de uma tabela serão mescladas, formando uma linha única em vez de linhas duplas entre células.*/
+    border: 2px solid rgb(140, 140, 140);
+    letter-spacing: 1px; /* espaçamento entre as letras de um texto. */
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+th, td {
+    border: 1px solid rgb(150, 150, 150);
+    padding: 8px; /*aumentou o espaço*/
+    text-align: center; /*centralizou tudo*/
+}
+
+thead th, tfoot tr{
+    background-color: rgb(0 0 0 );
+    color: white;
+    font-weight: 700; /*negrito*/
+}
+
+/*🔍 Sem collapse
+Cada célula tem sua própria borda → aparecem duas bordas lado a lado.
+
+✔️ Com collapse
+As bordas se unem → fica uma única borda, mais fina e organizada.*/
+
+
+
+
+

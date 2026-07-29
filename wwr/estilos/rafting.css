@@ -124,7 +124,7 @@ nav, p ,section,  article {
     position: absolute;  /*usada novamente para que os elementos fiquem acima da imagem hero*/
     bottom: 10%;        
     left: 50%;         
-    transform: translateX(-50%); 
+    transform: translateX(-50%); /* move o elemento 50% para a esquerda em relação à largura dele próprio.*/
     width: 85%;         
     background-color:var(--cor-destaque2); 
     padding: 20px;      /* MUDANÇA */
