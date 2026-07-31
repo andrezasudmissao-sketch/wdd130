@@ -24,7 +24,7 @@ header {
 
 /*CENTRALIZA TUDO DENTRO DELES E COLOCA COR ATRÁS*/
 header, main {
-    width: 690px;
+    width: 590px;
     margin: 0 auto;
     background-color: rgb(250, 243, 233);
     padding: 6px;
@@ -32,7 +32,7 @@ header, main {
 
 form {
     display: grid;
-    width: 650px;
+    width: 550px;
     margin: 0 auto;
     border: 1px solid (0 0 0 / 0.1);
     border-radius: 0.5rem;
@@ -42,7 +42,7 @@ form {
 
 fieldset{ 
     display: grid;
-    grid-gap: 5rem; /*80px*/
+    grid-gap: 3rem; /*48px*/
     padding: 1rem; /*1rem = 16px*/
     border: 1px solid (0 0 0 /0.2);
     margin: 1rem;

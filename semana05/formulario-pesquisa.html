@@ -15,7 +15,8 @@
         
         <form>
         <div class="contatos">
-        <h2>Informações de Contato</h2>
+            <fieldset>
+        <legend>informações de Contato</legend>
         <div class="item-formulario coluna2">
             <label for="nomecompleto">Nome Completo</label>  <!--Labels – Rótulos que descrevem a finalidade de cada campo do formulário-->
             <input type="text" id="nomecompleto" required> <!--O input dentro de um <form> serve para coletar dados do usuário--> </div>
@@ -24,9 +25,11 @@
             <label for="email-do-usuario">Email:</label>
             <input type="email" id="email-do-usuario" name="email-do-usuario" required></div> 
             </div>
+            </fieldset>
             
         <div class="perguntas">
-        <h2>Perguntas</h2>
+            <fieldset>
+        <legend>Perguntas</legend>
              <div class="item-formulario coluna1">
             <label for="navegador">Qual seu navegador favorito:</label>
                 <select name="navegador" id="navegador">  <!--O <select> dentro de um <form> serve para criar uma lista de opções para o usuário escolher.-->
@@ -53,6 +56,7 @@
             <!--O <textarea> é um campo de formulário usado para digitar textos longos, diferente do input type="text", que é mais adequado para textos curtos.-->
            
             <button type="submit">Enviar Pesquisa</button> <!-- enviar os dados preenchidos pelo usuário-->
+            </fieldset>
 
          </div>
         </form>
