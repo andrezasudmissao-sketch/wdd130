@@ -68,12 +68,14 @@ li a {
 body{
     font-family: var(--fonte-body);
     color: var(--cor-destaque1);
+    
 }
 
 h1 , h2{
     font-family: var(--fonte-titulo);
     color:var(--cor-primaria);
     text-align: center;
+    
 }
 
 /* 🔧 MUDANÇA: h1 agora fica sobre a imagem hero */
@@ -171,7 +173,9 @@ nav, p ,section,  article {
 }
                                                                                          
 /* GALERIA */
-.gallery { 
+.gallery,
+.moments, .caption   /*todas as páginas com imagens que precisavam ficar com o mesmo estilo*/
+ {   
     display: flex;
     padding: 20px;
     gap: 15px;
@@ -179,11 +183,14 @@ nav, p ,section,  article {
     text-align: center;
     font-size: 14px;
     justify-content: space-around;
+
        
     
 }
 
-.gallery img{
+.gallery img,
+.moments img, .caption img
+{
     width: 120px;
     height: 100px;
     border: 2px solid var(--cor-destaque2) ;
@@ -191,7 +198,7 @@ nav, p ,section,  article {
     margin: 12px; /*evita que as imagens fiquem juntas*/
 }
 
-.gallery figcaption {
+.gallery figcaption{
 
     font-size: 10px;
     text-align: center;
@@ -232,6 +239,7 @@ footer{
     justify-content: center;
     padding: 5px;
     border: 1px solid var(--cor-destaque4);
+    color: #fff;
 }
 
 /*Estilize o elemento div com a classe hero usando um valor
@@ -300,6 +308,13 @@ z-index: 999 → topo absoluto
     text-align: center;
 }
 
+.local-map-form, .juntos, .info-sobre{
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+
+    }
+
 /* MAPA + FORMULÁRIO */
 .map-form {
     display: flex;
@@ -355,11 +370,171 @@ input {
 }
 
 
+/*PÁGINA INDEX.HTML */
 
 
+.servicos-grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   background-color: #055a05;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+   
 
 
+}
+
+.servicos-grid h2 {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+.servico{
+    text-align: center;
+    margin: 10px;
+    
+    
+}
+.card {
+    font-size: 20px;
+    border: 1px solid #fff;
+    background-color: var(--cor-secudaria);
+    color: #000;
+}
+    
+
+.news {
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    border: 1px solid var(--cor-destaque4);
+    border-radius: 0 0 5px 5px ;
+    background-color: var(--cor-primaria);
+    padding: 30px;
+    justify-content:center;
+    
+   
+
+   
+}
+
+.newsletter h2{
+    text-align: center;
+    background-color: var(--cor-secudaria);
+    border-radius: 5px 5px 0 0 ;
+  
+    
+    
+}
+
+.news button {
+    width: 115px;
+    height: 40px;
+    background-color: var(--cor-secudaria);
+    border-radius: 0 5px 5px 0;
+    
+}
+
+.news input{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px 0 0 5px ;
+
+}
+
+.containerum{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;        /* ← centraliza o container */
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: justify;
+    color: #000;
+    background-color: #f4a261;
+}
+
+.containerum img{
+    width: 400px;
+    height:190px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+    
+    
+}
+
+table, th, td {
+    width: 100%;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding:30px 40px 5px 30px; /*o padding movimenta toda estrutura da tabela*/
+    background-color: #3b6958;
+    color: #f3efef ;
+    text-align: center;
+}
+
+th{
+    background-color:#f4a261;
+    color: #000;
+
+}
 
 
+.informacoes p {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 10px;
 
+}
 
+.caption {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-top: none;
+    
+
+    
+}
+
+.aventura h2{
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: none;
+    border-top: 1px solid #000;
+
+}
+
+.moments {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-top: none;
+}
+
+/* ===========================
+   BOTÃO CTA
+=========================== */
+.cta-btn {
+    display: inline-block;
+    padding: 12px 16px;
+    background-color:#055a05;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-bottom: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #0b6ecb;
+    transform: s
